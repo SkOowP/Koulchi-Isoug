@@ -1,0 +1,164 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1d93e755-4efe-4a9e-a7c4-da90945cc64a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Purchase</ID>
+  <Name>Purchase</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8c678289-5728-40ec-ac75-9712686c99a5">
+    <DataSourceViewID>Car Sales</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="687e3fbe-d2af-49bf-837d-806eba6739c7">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="520aeed1-3c7d-49a9-ab60-be1242f0630c">
+      <ID>Client Key</ID>
+      <Name>Client Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="96fd64dc-c5fb-4b4e-a9cf-6c640e375738">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7274f55-c0b7-4ec0-a434-2233e6a5fdb3">
+            <TableID>dbo_Purchase</TableID>
+            <ColumnID>Client_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="18ddad4c-553e-4efa-9a01-d466c75dc9ef">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e4a6a20-995b-4c43-b385-3b5577bdea24">
+            <TableID>dbo_Purchase</TableID>
+            <ColumnID>Car_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e91b10ad-fcf8-4a4f-9167-6fcecc9e9a58">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c106e3ea-5e80-4e4c-9c22-733d83bab565">
+            <TableID>dbo_Purchase</TableID>
+            <ColumnID>Date_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="feba4c84-9b35-4b79-8b0b-b68a465a83e7">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ed2aaef-6bcf-4fe2-aa98-1b305e099a34">
+            <TableID>dbo_Purchase</TableID>
+            <ColumnID>Salesman_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="fc2b6c32-a9cd-48f4-a3ff-7e77182a08f1">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec20aeb1-458e-441c-96ec-4d97b1a9664f">
+            <TableID>dbo_Purchase</TableID>
+            <ColumnID>Dealer_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e8d10096-7320-4769-b0a4-a69e388dfffe">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a3716ef8-c998-4a9c-be09-c689179a554f">
+            <TableID>dbo_Purchase</TableID>
+            <ColumnID>Deal_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="fbea87b9-e86e-4f30-be9a-b00fba9b6ae3">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a08169d4-1e30-425d-9701-1ce12a41d295">
+            <TableID>dbo_Purchase</TableID>
+            <ColumnID>Payment_Method_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a195d8fc-fd42-4818-b44b-0f37b3c508c9">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="14f9b689-354b-421d-9290-787777631690">
+            <TableID>dbo_Purchase</TableID>
+            <ColumnID>Purchase_Price</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="1ce9fa1a-3c3d-4ef6-9729-7a5082cdb999">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="81d47f7d-ab0b-4c58-b1ee-ca8fca387c1e">
+            <TableID>dbo_Purchase</TableID>
+            <ColumnID>Regular_Price</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="00940448-6d7c-46ce-9a79-32275f215453">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8ecb596-df77-408d-81e3-e9f2841c353a">
+            <TableID>dbo_Purchase</TableID>
+            <ColumnID>Discount_Rate</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a44643ce-f0c9-453b-b66b-acf9da9a699d">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="71263121-c432-4454-987a-1bb5bc0a240f">
+            <TableID>dbo_Purchase</TableID>
+            <ColumnID>Discount_Amount</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="7049846b-35db-452f-8ac5-e0c37f856392">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="458e8671-839a-4d7c-8c5c-87cde8857398">
+            <TableID>dbo_Purchase</TableID>
+            <ColumnID>Price_after_Discount</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="eda5e8df-447c-4ca9-bd1a-f6a0b2cd69b1">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b90f32c-9073-4c1e-9c15-89ef1f3bd006">
+            <TableID>dbo_Purchase</TableID>
+            <ColumnID>Revenue</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ca09b4fc-526b-4f72-8e4d-ffbebce4f031">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2c484d84-c08c-4e2d-b3f9-09f939833f5e">
+          <TableID>dbo_Purchase</TableID>
+          <ColumnID>Client_Key</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

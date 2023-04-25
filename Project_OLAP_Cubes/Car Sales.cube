@@ -1,0 +1,1321 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8639f51a-535e-4570-8edf-ca0cf2fdc6f0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Car Sales</ID>
+  <Name>Car Sales</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="9" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="11517" scrolltop="-9455" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="65" x="16545" y="10460" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Salesman" left="27280" top="-6278" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000e20c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Salesman" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Client" left="22277" top="4058" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="3651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000430e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Client" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Date" left="17236" top="2777" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="4357" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000005110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Date" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Payment_Method" left="22251" top="-5738" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3951" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00006f0f0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Payment_Method" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Car" left="27378" top="-1786" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3351" height="4710" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000170d000066120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Car" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Purchase" left="22069" top="-2317" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3933" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00005d0f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Purchase" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dealer" left="17108" top="-1127" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="2946" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000820b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dealer" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Deal" left="17159" top="-5360" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="2946" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000820b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Deal" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>11517</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-9455</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>17108</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-6278</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>65</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="fbbdc749-0d47-4c79-9904-c217d0dfdffb">
+      <ID>Car</ID>
+      <Name>Car</Name>
+      <DimensionID>Car</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9a639225-6062-471b-b82f-e4abfde4a01b">
+          <AttributeID>Car Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3d7c53f4-61f0-4e1b-9cd0-372bfb34197e">
+      <ID>Client</ID>
+      <Name>Client</Name>
+      <DimensionID>Client</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="eaab8430-15b3-4eb3-a47f-bef1eaf86547">
+          <AttributeID>Column1</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="974c3e94-542f-49d3-8634-49a8d3559fa4">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8ead04d7-2c26-43c8-8e46-821f2df34ba1">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="22f95372-bb17-4ba4-8afa-d4f256497d09">
+      <ID>Deal</ID>
+      <Name>Deal</Name>
+      <DimensionID>Deal</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1e72fd64-654d-42c9-925d-525ad1a5f25b">
+          <AttributeID>Deal Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bf202d93-2d96-4f03-be09-351072405190">
+      <ID>Dealer</ID>
+      <Name>Dealer</Name>
+      <DimensionID>Dealer</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a7ffaa21-793a-4183-866d-11fa27dc1b6a">
+          <AttributeID>Dealer Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="934231e0-fcd3-4738-a6af-a3131a3b3902">
+      <ID>Payment Method</ID>
+      <Name>Payment Method</Name>
+      <DimensionID>Payment Method</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6f931bec-6e81-4664-b57b-4fc86f2b6475">
+          <AttributeID>Payment Method _ Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="39a58c64-461a-4ea3-bece-d9bd5de05ca8">
+      <ID>Purchase</ID>
+      <Name>Purchase</Name>
+      <DimensionID>Purchase</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="29baa63c-7a24-4527-8915-126e4f009ca5">
+          <AttributeID>Client Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ebb1288f-65ad-401e-86c3-57c8c32dc902">
+      <ID>Salesman</ID>
+      <Name>Salesman</Name>
+      <DimensionID>Salesman</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8c5cd961-847a-4c5d-9e9e-819ed9eeb1b0">
+          <AttributeID>Salesman Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="0b69b03c-5ac7-4aa9-b59f-6f8398d63fc2">
+      <ID>Car</ID>
+      <Name>Car</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1f0d6c2e-795a-4fa7-afa9-dbcb683d5db1">
+          <ID>Car Key</ID>
+          <Name>Car Key</Name>
+          <Source dwd:design-time-name="65ec6aff-3436-4760-9243-ff12356a8fd3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e78584aa-014a-422a-a17f-7f54bb106873">
+              <TableID>dbo_Car</TableID>
+              <ColumnID>Car_x0020_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="53fff643-238c-4b40-93c4-f02e17f7f590">
+          <ID>Car Price</ID>
+          <Name>Car Price</Name>
+          <Source dwd:design-time-name="fd6b4f59-7077-4612-859b-4509fea7ee54">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="626fe4b0-0d42-4eba-96e6-43e11bc81a0d">
+              <TableID>dbo_Car</TableID>
+              <ColumnID>Car_x0020_Price</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9dc5b211-9837-4851-b84c-b4b81e3af8ac">
+          <ID>Year</ID>
+          <Name>Year</Name>
+          <Source dwd:design-time-name="d4df0f9d-32b9-471e-9efa-dd6d8bca566e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="23b17983-809e-4d6d-9b9b-5c5db3b06ab5">
+              <TableID>dbo_Car</TableID>
+              <ColumnID>Year</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fb4a925b-f12e-4f02-8f64-4c1f527973bd">
+          <ID>Purchase Price</ID>
+          <Name>Purchase Price</Name>
+          <Source dwd:design-time-name="c0a65654-25eb-41e6-b0c4-a2fda62d3f22">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a6922cec-b830-4783-af89-b8e6dfe8358c">
+              <TableID>dbo_Car</TableID>
+              <ColumnID>Purchase_x0020_Price</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="09833c61-a476-44f7-a57d-cc476f479344">
+          <ID>Car Count</ID>
+          <Name>Car Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="1e13c1c0-7192-41b6-91fd-8a98b9d21609">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="9ab38516-92eb-4da7-8a21-fa06b98423d2">
+              <TableID>dbo_Car</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="85f548b8-0c52-488f-82bf-5cd850f1e8d1">
+          <CubeDimensionID>Car</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1e4dba60-27e3-4fdd-b6d6-7bb420e58220">
+              <AttributeID>Car Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="83d983d8-1bdf-4ce9-953d-e768d02e3e9c">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9447dd38-c9cc-4e0a-a8ce-3a41dd969ec3">
+                    <TableID>dbo_Car</TableID>
+                    <ColumnID>Car_x0020_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="4fb6e749-1dd6-4fa0-822d-8a076fa9027d">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e6dc06fa-dc20-468b-91aa-3e101abbca6b">
+                    <TableID>dbo_Car</TableID>
+                    <ColumnID>Car_x0020_Plate</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="e68debb7-bc1c-4e50-99fd-bb5a361a4c67">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6c88baf8-18cb-4d14-9ec8-3e3127f99b94">
+                    <TableID>dbo_Car</TableID>
+                    <ColumnID>Car_x0020_Brand</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="37b5210a-d020-403e-b9e7-858159828765">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3ea18b6e-695b-478d-b0bb-0100de07aaa9">
+                    <TableID>dbo_Car</TableID>
+                    <ColumnID>Car_x0020_Model</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="c4e2be53-71e4-49ce-b8dd-b27cc61bc71e">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="43352aa5-b132-4a27-8a94-dc6a4cdbce1c">
+                    <TableID>dbo_Car</TableID>
+                    <ColumnID>Car_x0020_Color</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="d0fe7b4e-71c4-47bb-b7ff-a0314788d60c">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b1bab4fb-85df-4595-bbfc-560977637c6a">
+                    <TableID>dbo_Car</TableID>
+                    <ColumnID>Car_x0020_Transmission</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="bd3072b3-5056-419e-ab15-f4db7117fbca">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="42e41f8a-869b-48fe-9f9b-f59c4b0200a6">
+                    <TableID>dbo_Car</TableID>
+                    <ColumnID>Car_x0020_Engine</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="d5917799-6c91-41ac-9372-20cf26935103">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c007eba2-c8d2-442a-b5fa-d7435b9240fc">
+                    <TableID>dbo_Car</TableID>
+                    <ColumnID>Car_x0020_Style</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="da7ca0a7-d1bb-4b42-9d81-6229b69a913b">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a0415ef6-1a24-49bb-85e2-7bf308009b0b">
+                    <TableID>dbo_Car</TableID>
+                    <ColumnID>Car_x0020_Price</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="a067c9ce-30a2-4e3a-86e6-e008ee3c7bca">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="345a70c4-164e-46f2-a211-49c4512ada99">
+                    <TableID>dbo_Car</TableID>
+                    <ColumnID>Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="9e20b5a1-c368-4a95-967b-43c7475b911e">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="036d0443-8620-4c59-a2d1-0ed94b71f673">
+                    <TableID>dbo_Car</TableID>
+                    <ColumnID>Purchase_x0020_Price</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="9c1a36da-e410-4591-9092-8c75adb2a452">
+      <ID>Client</ID>
+      <Name>Client</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="4b8c2c4c-e591-4216-ad53-318c6557047e">
+          <ID>Client Key</ID>
+          <Name>Client Key</Name>
+          <Source dwd:design-time-name="5ae45357-b6cd-4a51-b4d9-9ec0173788b6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3cf79bc7-f98b-4c84-a629-d00239455209">
+              <TableID>dbo_Client</TableID>
+              <ColumnID>Client_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8c68fbd7-fdbc-47c1-8dca-f29c49361b81">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <Source dwd:design-time-name="ad7aa5da-841f-4093-8b61-00fabd36c617">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="46a9b80e-0443-4e4a-be6f-34739eb981b3">
+              <TableID>dbo_Client</TableID>
+              <ColumnID>Age</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e66ffe75-7692-4314-849f-5b461b3fdb38">
+          <ID>Client Count</ID>
+          <Name>Client Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="0ca17576-6630-4f04-b871-562ee049d5c2">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="b68a1dcf-fb68-4a7b-87f2-10b59e3871a0">
+              <TableID>dbo_Client</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c833a44b-0582-4178-b59b-7ea7e56506c9">
+          <CubeDimensionID>Client</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="83b9ae5d-d00a-4034-b402-839b6b6dae8d">
+              <AttributeID>Column1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ded8ede9-d819-4386-b9b5-78630645b926">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3c4e664f-5942-4093-9ef1-b6393b0576c8">
+                    <TableID>dbo_Client</TableID>
+                    <ColumnID>Column1</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="2b97993d-bf43-478a-b451-86d5f3f3f456">
+                  <DataType>Double</DataType>
+                  <NullProcessing>Preserve</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9809e898-09ce-479e-8e99-4f0c006b3277">
+                    <TableID>dbo_Client</TableID>
+                    <ColumnID>Client_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="088492c3-a5d8-4683-bc6b-3bad869c5754">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4b9b300a-90f8-402b-bc16-b0c2703c6135">
+                    <TableID>dbo_Client</TableID>
+                    <ColumnID>first_name</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="bd63df62-eb6f-45a8-a2e6-b8c13370e1e0">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c9babcf4-1099-4130-920e-fabe7594a317">
+                    <TableID>dbo_Client</TableID>
+                    <ColumnID>last_name</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="bcc20246-07ce-44f3-8ad6-2e59d6800fe0">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="055b6aad-4f66-411e-83fe-eadf5ff049cf">
+                    <TableID>dbo_Client</TableID>
+                    <ColumnID>email</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="1c11f457-9246-445d-be18-d2e21f4826be">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c370e7a8-437f-4428-9762-2470c6bedfcc">
+                    <TableID>dbo_Client</TableID>
+                    <ColumnID>gender</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="803d31c1-e26a-48bf-a702-145702402896">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dbba83e4-0d43-44f4-827d-61c1a01232ce">
+                    <TableID>dbo_Client</TableID>
+                    <ColumnID>phone_number</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="e6ba8ad1-12fe-42dd-99e2-f18b5a06c075">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0e2ecce5-c53d-4a50-8a1e-f093563c42a5">
+                    <TableID>dbo_Client</TableID>
+                    <ColumnID>Age</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="031069a2-3014-4b8e-998b-e7525fd879a8">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="62a53ad5-407b-4472-956f-23e5372de46c">
+          <ID>Date Key</ID>
+          <Name>Date Key</Name>
+          <Source dwd:design-time-name="7367ab07-a105-4663-bdc6-237ebca43f88">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1405a714-1b95-4489-a6f5-f1e2ff740fdc">
+              <TableID>dbo_Date</TableID>
+              <ColumnID>Date_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c4b85e05-7e8c-48d7-884f-72a0981eae5f">
+          <ID>Day</ID>
+          <Name>Date</Name>
+          <Source dwd:design-time-name="123f94ac-4e70-4dd7-aee1-941e7ad9ebfc">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fd0b0265-1e2b-4281-a96f-cd94d92563af">
+              <TableID>dbo_Date</TableID>
+              <ColumnID>Day</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="16c18cc3-aec4-4857-bf62-ff8ec9e94056">
+          <ID>F5</ID>
+          <Name>Year</Name>
+          <Source dwd:design-time-name="75cd5588-c2d5-47ba-b78a-5f60d2776807">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b2b6db68-6bdf-41b8-aad7-ade50073f15c">
+              <TableID>dbo_Date</TableID>
+              <ColumnID>F5</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1e750d6c-8f8e-4cbd-bd1c-746f72822cc4">
+          <ID>F8</ID>
+          <Name>Qtr_Name</Name>
+          <Source dwd:design-time-name="4106246d-e81c-4f85-8716-ecbff0cc8f67">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="55f10dd6-b88e-404a-8b7b-db8e65c0b0d2">
+              <TableID>dbo_Date</TableID>
+              <ColumnID>F8</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a51a8730-c6e0-44c3-9547-739c79c15aa7">
+          <ID>F10</ID>
+          <Name>Months</Name>
+          <Source dwd:design-time-name="a5c65df9-a3eb-410d-8fe1-4d06dffd83ed">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e62679a0-0f25-4ffc-a22a-7b8f4c5a9f48">
+              <TableID>dbo_Date</TableID>
+              <ColumnID>F10</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f9b5d1b9-937f-4ed8-b5c3-f3207106f1d1">
+          <ID>Date Count</ID>
+          <Name>Mo_Name</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="b637bccd-3394-4f7f-a7f0-98f8ddbc8fab">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="1a2e4d22-b9de-42d1-a821-8ce553e92b9a">
+              <TableID>dbo_Date</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="244b8367-0b35-49e8-ae38-89694bb7ba48">
+          <ID>F4 Count</ID>
+          <Name>Day_Name</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="a7050c74-d987-4eac-852c-62e8c2072679">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7323bfbd-0ddf-4450-bdcd-e0303088084b">
+              <TableID>dbo_Date</TableID>
+              <ColumnID>F4</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="de6971ce-91e8-43f2-858d-012ec6eceb83">
+          <ID>F7 Count</ID>
+          <Name>F7 Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="565c260d-ec97-4c60-bec7-eef674ca11e1">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="15f4f46e-cb00-475d-b60a-36a7e846961d">
+              <TableID>dbo_Date</TableID>
+              <ColumnID>F7</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="332998a1-e71a-4ead-a1f9-63e22c6defe2">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0596ffe1-f75d-47cd-99a8-d8a063bac32c">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5c8f30ca-4494-479f-8227-7a2b6dd609e8">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d1bb5b06-346a-4e6b-be80-5e379490a73b">
+                    <TableID>dbo_Date</TableID>
+                    <ColumnID>Date_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="cf0aa431-f0d9-4a14-952f-5eb56bea0f71">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9bfc5f6c-7b59-4669-9a79-22425d16facd">
+                    <TableID>dbo_Date</TableID>
+                    <ColumnID>Date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="16fb2e48-529d-4571-aed4-03bca0646a9b">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5ddb51a6-f6e1-4ec2-ba74-e31335ea3101">
+                    <TableID>dbo_Date</TableID>
+                    <ColumnID>Day</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="23d9932d-e92c-476e-88bd-96cc2ce108b8">
+      <ID>Deal</ID>
+      <Name>Deal</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="5a61770a-409f-4caf-b7ee-23f39adbafc4">
+          <ID>Deal Key</ID>
+          <Name>Deal Key</Name>
+          <Source dwd:design-time-name="4245cb52-4dab-47cc-a25d-5750ace1eed9">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f28ca42b-2947-41f0-bb56-5432ccd7bd7d">
+              <TableID>dbo_Deal</TableID>
+              <ColumnID>Deal_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="11bf3aac-2b40-4903-8707-5e04460934b3">
+          <ID>Discount</ID>
+          <Name>Discount</Name>
+          <Source dwd:design-time-name="00f9ef30-3705-4ca1-9b46-20ed284881cf">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="271db208-c2fc-4450-bb24-5c5ae7e5ac81">
+              <TableID>dbo_Deal</TableID>
+              <ColumnID>Discount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="189840d1-02b6-40c0-abde-57141d3e3d3e">
+          <ID>F6</ID>
+          <Name>F6</Name>
+          <Source dwd:design-time-name="c658f684-e6bd-4072-8f00-7e7a046ed2b1">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6fb8014b-a045-4534-afc5-94f052a8f972">
+              <TableID>dbo_Deal</TableID>
+              <ColumnID>F6</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ca7080a3-7915-4be2-a510-e86176c152f8">
+          <ID>Deal Count</ID>
+          <Name>Deal Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="3d6bf856-2825-415e-a137-f4a8b2ab3a97">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="ec314aee-6003-4021-8238-af25e211d7d7">
+              <TableID>dbo_Deal</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4920ac04-7fc6-4028-b693-cf9b171596c6">
+          <CubeDimensionID>Deal</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3235610e-97b4-4de7-8e67-63a804d516ba">
+              <AttributeID>Deal Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7291b847-4d97-43fd-bc56-74516a683dac">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c94b9aa9-9899-42e0-88c0-ec786f307f98">
+                    <TableID>dbo_Deal</TableID>
+                    <ColumnID>Deal_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="e8b881bc-7426-4a5e-a9b9-8ea2e096326c">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e793ca77-bda7-4468-9898-8af68ae5e18c">
+                    <TableID>dbo_Deal</TableID>
+                    <ColumnID>Deal_type</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="0aea0f93-6250-4be7-badd-cf078bd32c99">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="058aebcd-37ab-428e-a0c7-cc3d25fd7152">
+                    <TableID>dbo_Deal</TableID>
+                    <ColumnID>Gift</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="c3331c37-ac36-46ce-8c54-493dbe18cdc2">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b7844943-c90c-457a-a5ff-c813fcdbeb0c">
+                    <TableID>dbo_Deal</TableID>
+                    <ColumnID>Discount</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="85a051c7-8ad3-4a2b-8178-fcf930a1db60">
+      <ID>Dealer</ID>
+      <Name>Dealer</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="011042af-e9f8-42e8-9036-aa38bebe57fa">
+          <ID>Dealer Key</ID>
+          <Name>Dealer Key</Name>
+          <Source dwd:design-time-name="6c47800a-6407-42aa-bd20-a29ac33ff341">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="781ab433-ba82-4b3a-8e8c-28c9e857badf">
+              <TableID>dbo_Dealer</TableID>
+              <ColumnID>Dealer_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0b4c6f60-b5f5-47a1-9d3a-6c7656ba31e1">
+          <ID>Phone</ID>
+          <Name>Phone</Name>
+          <Source dwd:design-time-name="56d3ea41-467d-4aec-a6c0-6ada83e10cad">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="367ce600-01ab-4cf2-9d6b-f6831a89851b">
+              <TableID>dbo_Dealer</TableID>
+              <ColumnID>Phone</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c38a7755-cd2e-4b7d-a787-f003b2c6042e">
+          <ID>Dealer Count</ID>
+          <Name>Dealer Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="5e7d9772-a6ee-47f2-8d84-4d90423eec68">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f3e4534e-4c7b-43ba-a50a-304e3bc643fd">
+              <TableID>dbo_Dealer</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7d686cbb-3397-45f9-a52f-9685109db72a">
+          <CubeDimensionID>Dealer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="95b06212-8a6a-4649-be4f-53235134d555">
+              <AttributeID>Dealer Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6e9558d2-083b-4ec9-9bce-7823e7feb9bc">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0a38ea3c-9102-468d-96ab-d97cd752a8f8">
+                    <TableID>dbo_Dealer</TableID>
+                    <ColumnID>Dealer_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="7759ea9d-93ae-451a-abe7-0d0f0dac1c6b">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ab2019f9-815f-4eb2-8ba7-89d7086d55af">
+                    <TableID>dbo_Dealer</TableID>
+                    <ColumnID>Name</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="908d11f9-1eec-4f1e-93fe-cc162d80e4aa">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="64ca42e9-2064-44d9-bfb6-c23769630fb7">
+                    <TableID>dbo_Dealer</TableID>
+                    <ColumnID>Location</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="d9e72b30-c3cc-4fbb-93ca-890f8c213446">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="44ef0004-199e-42fc-bebf-4edebe84ddfc">
+                    <TableID>dbo_Dealer</TableID>
+                    <ColumnID>Phone</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="6772a4fb-bfc2-4bd3-8d83-34965557260b">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7729db4f-1250-47c9-9c9e-5283ff31e0cf">
+                    <TableID>dbo_Dealer</TableID>
+                    <ColumnID>Region</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="e1bfaf2d-499d-474e-b1f4-49b73c9742c6">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="044d256a-2641-43c0-9396-5dce9b4dd774">
+                    <TableID>dbo_Dealer</TableID>
+                    <ColumnID>State</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="52224bda-58e3-4ae0-8d7c-f6e5df4f4a37">
+      <ID>Payment Method</ID>
+      <Name>Payment Method</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1c602fd9-a918-4d61-8d77-9cdeeaa134cb">
+          <ID>Payment Method _ Key</ID>
+          <Name>Payment Method _ Key</Name>
+          <Source dwd:design-time-name="327f6bbe-6780-4fb4-a7cf-96bedc17044c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="97713b52-0fd3-4815-a0b7-b9d082fc6ae0">
+              <TableID>dbo_Payment_Method</TableID>
+              <ColumnID>Payment_x0020_Method_x0020__Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="06b4467a-cb4e-47f5-b22c-e220c9dbe2a0">
+          <ID>Payment Method Count</ID>
+          <Name>Payment Method Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="291d1a3e-2ab1-4c99-8bd2-2a245d375f96">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="4222afda-bea2-4ff6-b4d5-8903affde802">
+              <TableID>dbo_Payment_Method</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9a8bf502-5d2b-46ad-80de-bbe2c7c35fed">
+          <CubeDimensionID>Payment Method</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="85944899-573e-4444-aff2-2d7113c70975">
+              <AttributeID>Payment Method _ Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c53a30d6-3d06-4d3e-a260-344ae7ddf763">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3f8088bf-0181-4c67-8083-cfd04b61ea7f">
+                    <TableID>dbo_Payment_Method</TableID>
+                    <ColumnID>Payment_x0020_Method_x0020__Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="abc463fc-9893-4a8b-8741-160b713422b0">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="64d80719-4beb-4119-8fa1-d2e03bab4e96">
+                    <TableID>dbo_Payment_Method</TableID>
+                    <ColumnID>Description</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="e367e78b-36b4-4b07-b36e-e94f84bf8a25">
+      <ID>Purchase</ID>
+      <Name>Purchase</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="0a86279b-6af3-44d6-ba57-a0960c5341a9">
+          <ID>Client Key - Purchase</ID>
+          <Name>Client Key - Purchase</Name>
+          <Source dwd:design-time-name="360d7627-55ea-40eb-8300-dbf577712d87">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7c253f90-7479-48bc-9c95-9643dc2484ae">
+              <TableID>dbo_Purchase</TableID>
+              <ColumnID>Client_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8d967d55-6719-4c16-af65-397d8acaa9ae">
+          <ID>Car Key - Purchase</ID>
+          <Name>Car Key - Purchase</Name>
+          <Source dwd:design-time-name="79a11e90-c844-4eb8-bfa3-bc0f901ae48c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3555b6c9-7873-412a-b3bc-2275210b6fa3">
+              <TableID>dbo_Purchase</TableID>
+              <ColumnID>Car_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="420ef288-ef20-4391-b056-68e0923c4d1a">
+          <ID>Date Key - Purchase</ID>
+          <Name>Date Key - Purchase</Name>
+          <Source dwd:design-time-name="29d3f306-60aa-4453-a674-f9186b4b5325">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d4f1e596-c067-4dcb-94bb-d8050258c25c">
+              <TableID>dbo_Purchase</TableID>
+              <ColumnID>Date_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c8bb1c67-373e-4f6a-a010-d0789b5aec33">
+          <ID>Salesman Key</ID>
+          <Name>Salesman Key</Name>
+          <Source dwd:design-time-name="f202230d-1d6f-4f51-a36f-64122abe5dc6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="902b1593-dbc8-49e9-a348-50979338e15a">
+              <TableID>dbo_Purchase</TableID>
+              <ColumnID>Salesman_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="80201efe-7ea0-4d13-927c-2003dd1619d8">
+          <ID>Dealer Key - Purchase</ID>
+          <Name>Dealer Key - Purchase</Name>
+          <Source dwd:design-time-name="6911444a-b22c-4e92-b49f-24c0a230fb1e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fa454fde-2bcc-4e97-b878-887f1eff5bc9">
+              <TableID>dbo_Purchase</TableID>
+              <ColumnID>Dealer_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="73afdb06-6fe3-4425-a85c-4fc4d03375a5">
+          <ID>Deal Key - Purchase</ID>
+          <Name>Deal Key - Purchase</Name>
+          <Source dwd:design-time-name="8513eae6-3504-4e7c-81e2-e0e3f417fd12">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="99ac9c9b-18ac-4cf3-9631-f3081283eafb">
+              <TableID>dbo_Purchase</TableID>
+              <ColumnID>Deal_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="11143cb9-fba1-4543-abdf-f5849dc91e7d">
+          <ID>Payment Method Key</ID>
+          <Name>Payment Method Key</Name>
+          <Source dwd:design-time-name="bee3a8e8-6cf4-41d8-952f-4442df9297bc">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5317de78-7c21-45fe-9a2c-ebc6189cdcca">
+              <TableID>dbo_Purchase</TableID>
+              <ColumnID>Payment_Method_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="71ed3cc6-d946-4896-9177-49cf9acde43b">
+          <ID>Purchase Price - Purchase</ID>
+          <Name>Purchase Price - Purchase</Name>
+          <Source dwd:design-time-name="090e0343-12af-47ef-afb8-b8de8a933388">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b2d3f1d1-eb7c-415e-85c1-707c9a30ff81">
+              <TableID>dbo_Purchase</TableID>
+              <ColumnID>Purchase_Price</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4200bd70-9acf-4784-b1a9-46a6ae91b0e3">
+          <ID>Regular Price</ID>
+          <Name>Regular Price</Name>
+          <Source dwd:design-time-name="ea40306b-fd1a-4126-af8e-305ad05ae69c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="13122140-1330-49ac-851f-f2d8a2c2934f">
+              <TableID>dbo_Purchase</TableID>
+              <ColumnID>Regular_Price</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="710ab6a4-f998-4707-89d6-cfe3cb7769a4">
+          <ID>Discount Rate</ID>
+          <Name>Discount Rate</Name>
+          <Source dwd:design-time-name="2c9dd015-1c93-485d-ba00-90e83ad89545">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="16585b5b-dbdb-4c53-8172-c7c9e1d60572">
+              <TableID>dbo_Purchase</TableID>
+              <ColumnID>Discount_Rate</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e820c81f-d203-472c-a78c-6c38ea95ab28">
+          <ID>Discount Amount</ID>
+          <Name>Discount Amount</Name>
+          <Source dwd:design-time-name="e4606bae-8e38-4d55-a193-280d213d21f8">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3962ec28-97c8-424c-8fe5-4762b9088cf3">
+              <TableID>dbo_Purchase</TableID>
+              <ColumnID>Discount_Amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1d6fd693-9a85-463b-8d45-375bd8d85fc1">
+          <ID>Price After Discount</ID>
+          <Name>Price After Discount</Name>
+          <Source dwd:design-time-name="0ce787ee-e1ed-444f-afdb-0ffb645ecb77">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="37cbfadc-c8bb-436f-b525-fcb8049bef36">
+              <TableID>dbo_Purchase</TableID>
+              <ColumnID>Price_after_Discount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f20133b2-6a42-4d45-a2fe-c28c96024980">
+          <ID>Revenue</ID>
+          <Name>Revenue</Name>
+          <Source dwd:design-time-name="812bfc8e-772b-4f5f-a52a-71cf493ec151">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f6870d26-8c81-430a-98a0-bc42e80f55dc">
+              <TableID>dbo_Purchase</TableID>
+              <ColumnID>Revenue</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="15e1df4d-e293-49b9-aaf7-ffb208e428dc">
+          <ID>Purchase Count</ID>
+          <Name>Purchase Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="c051ab81-30cc-45f3-8c68-45df78d85268">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="dcb97e0e-987d-4df9-a22a-a5a47176b548">
+              <TableID>dbo_Purchase</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f5e442b6-0048-4724-8654-39c18ed1cfae">
+          <CubeDimensionID>Purchase</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9764abb0-88cd-4bf8-8f26-5743e0ed1b1e">
+              <AttributeID>Client Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2f39bfdb-27fe-4e6c-b9fc-9d6569c036d1">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="360a077b-d701-4046-9bd7-92fb2a8486fc">
+                    <TableID>dbo_Purchase</TableID>
+                    <ColumnID>Client_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="3b8466ed-1859-4e66-b3f8-3e3486b5f24d">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3f827b67-f7c2-48a8-8560-2c05ac7888bc">
+                    <TableID>dbo_Purchase</TableID>
+                    <ColumnID>Car_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="d71f6c7a-4312-47a8-9361-5cf8b9eb79a7">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fef1423d-5418-4bc6-8222-8b78abb632b7">
+                    <TableID>dbo_Purchase</TableID>
+                    <ColumnID>Date_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="2b03e3d9-b123-4d2e-bace-dd39203191ea">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6f27d15e-c3f4-4353-8f2a-35019fecb4aa">
+                    <TableID>dbo_Purchase</TableID>
+                    <ColumnID>Salesman_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="2cb49400-c80f-4510-92b2-c9863cea9809">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="324301e1-286b-4b39-98f5-3a0e27df383a">
+                    <TableID>dbo_Purchase</TableID>
+                    <ColumnID>Dealer_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="23b2d868-4d82-46d9-8972-b9b16107cbbf">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b23eee5e-3417-4c6b-affe-7f66c367661d">
+                    <TableID>dbo_Purchase</TableID>
+                    <ColumnID>Deal_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="089706f5-bfdb-4ad9-a706-ee10f41002ca">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="39554ce1-5610-45b4-b9dc-5d098246ecb8">
+                    <TableID>dbo_Purchase</TableID>
+                    <ColumnID>Payment_Method_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="4c704892-e627-4ef5-b166-2796a917ccbc">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e270f831-7b1d-454f-9b33-1a47a344510a">
+                    <TableID>dbo_Purchase</TableID>
+                    <ColumnID>Purchase_Price</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="ff3976f7-d81c-4c12-96fd-126b4ca50f12">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4ed7ff13-d11f-42fd-816a-ef74da32ca41">
+                    <TableID>dbo_Purchase</TableID>
+                    <ColumnID>Regular_Price</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="93cc28a5-ebcf-4680-81a8-a99f87bf9ded">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="49fa62a4-64cb-4140-a3c1-62a217416be9">
+                    <TableID>dbo_Purchase</TableID>
+                    <ColumnID>Discount_Rate</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="add38203-5002-43db-a020-915c8be1d4eb">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d7888c5d-9759-4aad-8350-c091e8a5be50">
+                    <TableID>dbo_Purchase</TableID>
+                    <ColumnID>Discount_Amount</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="49adb75b-5fe9-4391-b867-3864d2907ec9">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4eee16de-a0d1-4f7c-af14-fb66665a9ec4">
+                    <TableID>dbo_Purchase</TableID>
+                    <ColumnID>Price_after_Discount</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="925918f6-2fb9-492a-b4e0-79f09158df86">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e7ac2144-9eec-48de-a496-d4451eae9607">
+                    <TableID>dbo_Purchase</TableID>
+                    <ColumnID>Revenue</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="7527cbe7-8bcf-40f4-ac83-6c5e52a41699">
+      <ID>Salesman</ID>
+      <Name>Salesman</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="e6abca66-422d-4f82-b448-f8b521138461">
+          <ID>Salesman Key - Salesman</ID>
+          <Name>Salesman Key - Salesman</Name>
+          <Source dwd:design-time-name="9e1e2cc2-d0b9-4803-95aa-c1de6525a45e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="31b87be5-ef8e-4fae-a5a8-57e79d824978">
+              <TableID>dbo_Salesman</TableID>
+              <ColumnID>Salesman_Key</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="41c9cbc4-3478-4634-b9a1-b72305481249">
+          <ID>Age - Salesman</ID>
+          <Name>Age - Salesman</Name>
+          <Source dwd:design-time-name="d28013f3-3e36-4754-9e84-44bab1f6dba1">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bf8cc475-f3c0-42a1-8fdc-12a8cf19ef3a">
+              <TableID>dbo_Salesman</TableID>
+              <ColumnID>Age</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="105543b1-97a5-4249-9f2a-d8b95b9a3fea">
+          <ID>Salesman Count</ID>
+          <Name>Salesman Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="eee486a0-b0bb-4bbc-9192-d58798cbada2">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="71c179df-2e0f-430f-9591-22bc791e2d8d">
+              <TableID>dbo_Salesman</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3abfbce8-d0bf-4b02-a48d-52f97feb8e15">
+          <CubeDimensionID>Salesman</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="38c6907f-ba7c-4dd0-b604-ab6de0afa17e">
+              <AttributeID>Salesman Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c7c8cedf-4091-44bf-ae92-163c403035f8">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="db267d97-f55d-4198-a531-d22acfd910c5">
+                    <TableID>dbo_Salesman</TableID>
+                    <ColumnID>Salesman_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="3975d1f4-e1c6-4398-a5f1-a626a5884977">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4e059602-917e-4940-93fd-60e918f938cd">
+                    <TableID>dbo_Salesman</TableID>
+                    <ColumnID>First_x0020_Name</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="062a6b2f-3f35-47ff-a8f5-bcd40fae91ac">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="57040999-1033-489e-8267-75255d119638">
+                    <TableID>dbo_Salesman</TableID>
+                    <ColumnID>Last_x0020_Name</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="1be7d3e7-7afd-494a-97dc-e9b43c1fd032">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0028f417-a7a0-435d-b8e8-1dd30803113e">
+                    <TableID>dbo_Salesman</TableID>
+                    <ColumnID>Email</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="375790cd-a199-4489-85de-d8886b18f953">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a4e6e526-4abc-4970-a9de-17b03c204e2a">
+                    <TableID>dbo_Salesman</TableID>
+                    <ColumnID>Phone_x0020_Number</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="3cc2b8bc-37e7-4b8b-8ee6-8dcb7aa5b554">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="db3f20f1-59ea-4bf8-b7e3-035cf66b737f">
+                    <TableID>dbo_Salesman</TableID>
+                    <ColumnID>Gender</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="cb13cea4-14a9-4a75-bc4c-09e20d8bd47d">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e260514e-be8e-455e-b8a8-5321e704c929">
+                    <TableID>dbo_Salesman</TableID>
+                    <ColumnID>Age</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="b9d36d42-48d7-4611-aaea-cbf1bf5fdc1c">
+    <DataSourceViewID>Car Sales</DataSourceViewID>
+  </Source>
+</Cube>
